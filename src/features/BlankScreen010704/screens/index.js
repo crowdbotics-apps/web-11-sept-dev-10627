@@ -30,7 +30,8 @@ export class __Blank extends React.Component {
     Toggle_48: true,
     Input_66: "",
     Datepicker_67: new Date("09/11/2020"),
-    Toggle_68: true
+    Toggle_68: true,
+    Datepicker_70: new Date("09/11/2020")
   }
   render = () => (
     <View
@@ -791,6 +792,40 @@ export class __Blank extends React.Component {
           borderBottomWidth: 0,
           borderRadius: 0
         }}
+      />
+      <Datepicker
+        style={{
+          width: "100%",
+          marginLeft: 0,
+          marginRight: 0,
+          marginTop: 5,
+          marginBottom: 5,
+          paddingLeft: 5,
+          paddingRight: 5,
+          paddingTop: 5,
+          paddingBottom: 5,
+          overflow: "visible",
+          fontSize: 12,
+          color: "#000000",
+          backgroundColor: "#ffffff",
+          fontFamily: "Roboto-Regular",
+          borderColor: "#000000",
+          borderStyle: "solid",
+          borderWidth: 0,
+          borderLeftWidth: 0,
+          borderRightWidth: 0,
+          borderTopWidth: 0,
+          borderBottomWidth: 0,
+          borderRadius: 0,
+          textAlign: "left",
+          textAlignVertical: "center",
+          textDecorationLine: "none",
+          textTransform: "none",
+          lineHeight: 12,
+          letterSpacing: 0
+        }}
+        date={this.state.Datepicker_70}
+        onSelect={nextValue => this.setState({ Datepicker_70: nextValue })}
       />
     </View>
   )
