@@ -22,7 +22,9 @@ export class __Blank extends React.Component {
   state = {
     Toggle_5: true,
     Toggle_7: true,
+    CheckBox_64: true,
     Input_56: "",
+    Radio_62: true,
     CheckBox_13: true,
     Toggle_44: true,
     Toggle_48: true
@@ -156,6 +158,37 @@ export class __Blank extends React.Component {
         checked={this.state.Toggle_7}
         onChange={nextChecked => this.setState({ Toggle_7: nextChecked })}
       />
+      <CheckBox
+        text="Checkbox"
+        disabled={false}
+        style={{
+          marginLeft: 0,
+          marginRight: 0,
+          marginTop: 5,
+          marginBottom: 5,
+          paddingLeft: 5,
+          paddingRight: 5,
+          paddingTop: 5,
+          paddingBottom: 5,
+          overflow: "visible",
+          borderColor: "#000000",
+          borderStyle: "solid",
+          borderWidth: 0,
+          borderLeftWidth: 0,
+          borderRightWidth: 0,
+          borderTopWidth: 0,
+          borderBottomWidth: 0,
+          borderRadius: 0,
+          textAlign: "left",
+          textAlignVertical: "center",
+          textDecorationLine: "none",
+          textTransform: "none",
+          lineHeight: 12,
+          letterSpacing: 0
+        }}
+        checked={this.state.CheckBox_64}
+        onChange={nextChecked => this.setState({ CheckBox_64: nextChecked })}
+      />
       <Input
         placeholder="Sample text input placeholder"
         editable={true}
@@ -199,6 +232,37 @@ export class __Blank extends React.Component {
         }}
         value={this.state.Input_56}
         onChangeText={nextValue => this.setState({ Input_56: nextValue })}
+      />
+      <Radio
+        text="Radio button"
+        disabled={false}
+        style={{
+          marginLeft: 0,
+          marginRight: 0,
+          marginTop: 5,
+          marginBottom: 5,
+          paddingLeft: 5,
+          paddingRight: 5,
+          paddingTop: 5,
+          paddingBottom: 5,
+          overflow: "visible",
+          borderColor: "#000000",
+          borderStyle: "solid",
+          borderWidth: 0,
+          borderLeftWidth: 0,
+          borderRightWidth: 0,
+          borderTopWidth: 0,
+          borderBottomWidth: 0,
+          borderRadius: 0,
+          textAlign: "left",
+          textAlignVertical: "center",
+          textDecorationLine: "none",
+          textTransform: "none",
+          lineHeight: 12,
+          letterSpacing: 0
+        }}
+        checked={this.state.Radio_62}
+        onChange={nextChecked => this.setState({ Radio_62: nextChecked })}
       />
       <Image
         resizeMode="cover"
